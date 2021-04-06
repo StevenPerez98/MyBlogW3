@@ -1,0 +1,218 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Pandy</title>
+	<link rel="stylesheet" href="css/styles2.css">
+	<link rel="icon" type="image/png" href="img/panda.jpg">
+	
+</head>
+<body>
+
+	<header>
+      <h1 class="header-title">MY BLOG</h1>
+      <p class="description">Welcome to the blog of <span class="span">unknown</span></p>
+    </header>
+
+	<div class="container">
+		<div class="main-container">
+			<!--TITLE HEADING-->
+			<article class="article">
+				<img src="img/woods.jpg" style="width: 100%">
+				<div class="tittle-heading">
+					<h1>TITLE HEADING</h1>
+					<p class="sub-ttle">Title description, <span class="date">April 7, 2014</span></p>
+					<p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+					<br>
+					<br>
+					<button href="" class="btns" onclick="newView1()">READ MORES &raquo</button>
+					<div class="comments">
+						<p>Comments <span class="numero">0</span></p>
+					</div>
+				</div>
+			</article>
+			<br>
+			<br>
+			<br>
+			<!--BLOG ENTRY-->
+			<article class="article">
+				<img src="img/bridge.jpg" style="width: 100%">
+				<div class="blog-entry">
+					<h1>BLOG ENTRY</h1>
+					<p class="sub-ttle">Title description, <span class="date">April 2, 2014</span></p>
+					<p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+					<br>
+					<br>
+					<button href="" class="btns" onclick="newView2()">READ MORES &raquo</button>
+					<div class="comments">
+						<p>Comments <span class="numero">0</span></p>
+					</div>
+				</div>
+			</article>
+		</div>
+
+		
+			<aside class="sidebar">
+				<!--My Name-->
+				<div class="div1">
+					<img src="img/avatar_g.jpg" style="width: 100%">
+					<div class="myname">
+						<h3>My Name</h3>
+						<p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+					</div>
+				</div>
+				<br>
+				<br>
+				<!--Popular post-->
+				<div class="popular-post">
+					<div class="popular-post-tittle">
+						<h4>Popular Posts</h4>
+					</div>
+
+					<div class="popular-post-div" onclick="newView6()">
+						<img src="img/workshop.jpg" style="width: 50px">
+						<p>Lorem<br>
+		       			Sed mattis nunc</p>
+					</div>
+
+					<div class="popular-post-div" onclick="newView7()">
+						<img src="img/gondol.jpg" style="width:50px">
+						<p>Ipsum<br>
+						Praes tinci sed</p>
+					</div>
+
+					<div class="popular-post-div"onclick="newView8()">
+						<img src="img/skies.jpg" style="width: 50px">
+						<p> Dorum<br>
+						Ultries congue</p>
+					</div>
+
+					<div class="popular-post-div" onclick="newView9()">
+						<img src="img/rock.jpg" style="width:50px">
+						<p>Mingsum <br>
+						Lorem ipsum dipsum</p>
+					</div>
+				</div>
+				<br><br>
+				<!--Tag-Post-->
+				<div class="tag-post">
+		          <div class="tittle-tag">
+		            <h2>Tags</h2>
+		          </div>
+		          <div class="tag-items">
+		            <p>
+		              <span class="span">Travel</span> <span>New York</span>
+		              <span>London</span> <span>Ikea</span> <span>Norway</span>
+		              <span>Diy</span> <span>Ideas</span> <span>Baby</span>
+		              <span>Family</span> <span>News</span> <span>Clothing</span>
+		              <span>Shopping</span> <span>Sports</span> <span>Games</span>
+		            </p>
+		          </div>
+		        </div>
+			</aside>
+	</div>
+
+
+	<footer class="footer">
+		<div>
+          <button href="#" class="btn1" onclick="newView3()">Previus</button>
+          <button href="#" class="btn2" onclick="newView4()">Next &raquo</button>
+          <p>Created by Andy Pérez</p>
+        </div>
+    </footer>
+
+ <div id="fondoModal">
+	<div class="containerModal-1">
+		<h1>Welcome to JavaScript Course</h1>
+		<h2 id="getData1"></h2>
+		<button class="btn_back" onclick="comeBack()">Come Back</button>
+	</div>
+</div>
+
+<div id="fondoModal2">
+	<div class="containerModal-2">
+		<h1>Welcome</h1>
+		<h2 id="getData2"></h2>
+		<button class="btn_back" onclick="comeBack()">Come Back</button>
+	</div>
+</div>
+
+<div id="fondoModal3">
+	<div class="containerModal-3">
+		<h1>Welcome</h1>
+		<br>
+		<h2 id="resultPlus"></h2>
+		<br>
+		<button class="btn_back" onclick="comeBack()">Come Back</button>
+	</div>
+</div>
+
+<div id="fondoModal4">
+	<div class="containerModal-4">
+		<h1>Welcome</h1>
+		<h2>Create an Account</h2>
+		<form>
+			<div class="userFirst">
+				<input type="text" placeholder="First Name" id="userFirst">
+			</div>
+			<div  class="userLast">
+				<input type="text" placeholder="Last Name" id="userLast">
+			</div>
+			<div class="userEmail">
+				<input type="email" placeholder="Email" id="userEmail">
+			</div>
+			<div class="userPassword">
+				<input type="password" placeholder="Password" id="userPassword">
+			</div>
+		</form>
+		<button class="btn_send" onclick="newView5()">Send</button>
+
+
+	</div>
+</div>
+
+
+<div id="fondoModal5">
+	<div class="containerModal-5">
+		<h1 align="center">Account Created!</h1>
+		<div class="userInformation">
+			<p>User name: <span id="CompleteName"></span><p>
+			<p>Email: <span id="Message"></span></p>
+			<p id="Password"></p>
+			<button align="center" class="btn_back1" onclick="comeBack()">Come Back</button>
+		</div>
+	</div>
+</div>
+
+
+<div id="fondoModal6">
+	<div class="containerModal-6">
+		<h1>Welcome</h1>
+		<button class="btn_back" onclick="comeBack()">Come Back</button>
+	</div>
+</div>
+
+<div id="fondoModal7">
+	<div class="containerModal-7">
+		<h1>Welcome</h1>
+		<button class="btn_back" onclick="comeBack()">Come Back</button>
+	</div>
+</div>
+		
+<div id="fondoModal8">
+	<div class="containerModal-8">
+		<h1>Welcome</h1>
+		<button class="btn_back" onclick="comeBack()">Come Back</button>
+	</div>
+</div>
+
+<div id="fondoModal9">
+	<div class="containerModal-9">
+		<h1>Welcome</h1>
+		<button class="btn_back" onclick="comeBack()">Come Back</button>
+	</div>
+</div>
+
+<script src="js/script.js"></script>
+	
+</body>
+</html>

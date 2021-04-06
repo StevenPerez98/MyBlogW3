@@ -1,0 +1,463 @@
+/*Padding: ajuste vertical, ajuste horizontal */
+/*box-shadow: ajuste horizontal, ajuste vertical, proporción de difuminado*/
+
+body{
+	background-color: #f1f1f1;
+	font-family: Arial;
+}
+.header-title {
+  text-align: center;
+  font-size: 40px;
+
+}
+
+.description{
+	border-top: 10px;
+	text-align: center;	
+}
+
+.span{
+	color: #fff !important;
+  	background: #000 !important;
+  	padding: 0 12px;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 25px;
+  padding: 10px;
+}
+.container .main-container{
+	grid-column: 1/4;
+}
+
+.main-container >article{
+	padding: none;
+	 /*Agrega el estilo de sombra a los container*/
+	box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.18), 0px 4px 10px 0px rgba(0,0,0,0.13);
+	height: 610px;
+	background-color: #fff;
+	font-family: Arial;
+
+}
+
+.article h1{
+	font-weight: bold;
+  	font-size: 30px;
+}
+
+.article .sub-ttle{
+	font-weight: none;
+	font-size: 20px;
+
+}
+
+.article .date{
+	 font-weight: bold;
+	color: #cccccc;
+}
+
+.article p{
+	font-size: 14px;
+}
+.tittle-heading,.blog-entry{
+	background-color: #fff;
+	padding: 0.15px 16px;
+	
+}
+
+.article button{
+	font-weight: bold;
+	font-size: 15px;
+	padding: 15px 28px;
+	background-color: #fff;
+	border:1px #000 solid;
+}
+
+ .comments{
+ 	font-weight: bold;
+	float: right;
+	
+}
+
+.numero{
+	padding:  2px 6px;
+	background-color: #000;
+	color: #fff;
+}
+
+.container .sidebar{
+	grid-column: 4/6;
+	font-family: Arial;
+}
+
+.sidebar > div {
+  padding: none;
+  /*Agrega el estilo de sombra a los container*/ 
+  box-shadow: 0px 4px 8px  0px rgba(0, 0, 0, 0.18), 0 4px 10px 0 rgba(0, 0, 0, 0.13);
+}
+
+.myname{
+	background-color: #fff;
+  	padding: 0.15px 16px;
+}
+
+.popular-post-tittle{
+	background-color: #f1f1f1;
+	padding: 5px 20px;
+	font-size: 20px;
+}
+
+.popular-post-div{
+	background-color: #fff;
+	height: 82px;
+	color: #000;
+	padding: 16px;
+	display: flex; /*Posiciona a la par el contenido que tienen los divs*/
+	justify-content: start;
+	align-items: center;
+	border-bottom: 1px solid #ddd;
+}
+
+
+.popular-post-div:hover {
+  cursor: pointer;
+  background: #cccccc;
+}
+
+.tag-post{
+	background-color: #f1f1f1;
+	padding: none
+}
+
+.tittle-tag{
+	padding: 1px 20px;
+	font-size: 18px;
+}
+
+.tag-items{
+	background-color: #fff;
+	padding: 10px 20px;
+}
+
+.tag-items span{
+	background-color: #f1f1f1;
+  	color: #000;
+  	font-size: 15px;
+  	padding: 0 8px;
+}
+
+
+.footer {
+  margin:auto;
+  margin-top:30px;
+  background-color: #616161;
+  color: #fff;
+  height: 178px;
+  padding: 20px;
+}
+.btns {
+  font-size: 15px;
+  margin: 15px 0;
+  padding: 12px 24px;
+  color: #000;
+  background-color: #fff;
+  border:1px #000 solid;
+}
+.btns:hover {
+  cursor: pointer;
+  color: #000;
+  background-color: #cccccc;
+}
+
+.btn1{
+	font-size: 15px;
+	margin: 15px;
+	padding: 12px 24px;
+	color: #fff;
+	background-color: #cccccc;
+}
+
+.btn1:hover {
+  cursor: pointer;
+  color: #000;
+  background-color: #f1f1f1;
+}
+
+.btn2{
+	font-size: 15px;
+	margin: 15px 0;
+	padding: 12px 24px;
+	color: #fff;
+	background-color: #000;
+}
+
+.btn2:hover {
+  cursor: pointer;
+  color: #000;
+  background-color: #f1f1f1;
+}
+
+
+#fondoModal,
+#fondoModal2,
+#fondoModal3,
+#fondoModal4,
+#fondoModal5,
+#fondoModal6,
+#fondoModal7,
+#fondoModal8,
+#fondoModal9{
+	display: none;
+	background-color: rgba(0,0,0,0.9);
+	z-index: 5;
+	position: fixed;
+	top: 0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+}
+
+.containerModal-1{
+	background-image: url("https://www.agernic.com/uploads/css-background-image-size-fit-full-screen.jpg");
+	width: 30%;
+	height: 400px;
+	margin:0 auto;
+	text-align: center;
+	box-shadow: 10px 10px 9px 10px rgba(0,0,0,0.8);
+	border-radius: 20px;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.containerModal-1 h1{
+ 	margin: 0 auto;
+ 	margin-top: 50px;
+ 	font-size: 30px;
+ 	font-family: Arial;
+ 	font-weight: bold;
+ 	color: #fff;
+ }
+
+.containerModal-1 h2{
+	margin-top: 40px;
+	font-size: 24px;
+	font-family: Arial;
+	color: #fff;
+}
+ .btn_back{
+ 	background-color: #FF7F50;
+ 	color: #000;
+ 	font-size: 15px;
+ 	font-family: Arial;
+ 	border-radius: 5px;
+ 	margin-top: 60px;
+ 	padding: 10px;
+ 	align-items: center;
+
+ }
+
+ .btn_back:hover{
+ 	cursor: pointer;
+ 	color: #000;
+  	background-color: #f1f1f1;
+ }
+
+
+.containerModal-2{
+	background-image: url("https://img.freepik.com/free-vector/abstract-technology-particle-background_52683-25766.jpg?size=626&ext=jpg");
+	width: 30%;
+	height: 400px;
+	margin:0 auto;
+	text-align: center;
+	box-shadow: 10px 10px 9px 10px rgba(0,0,0,0.8);
+	border-radius: 20px;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.containerModal-2 h1{
+ 	margin: 0 auto;
+ 	margin-top: 50px;
+ 	font-size: 40px;
+ 	font-family: Arial;
+ 	font-weight: bold;
+ 	color: #fff;
+ }
+.containerModal-2 h2{
+	margin-top: 40px;
+	font-size: 28px;
+	font-family: Arial;
+	color: #fff;
+}
+
+
+.containerModal-3{
+	background-color: rgb(87,189,130);
+	transition: background 0.5s aese;
+	width: 30%;
+	height: 400px;
+	margin:0 auto;
+	text-align: center;
+	box-shadow: 10px 10px 9px 10px rgba(0,0,0,0.8);
+	border-radius: 20px;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 20px;
+}
+
+.containerModal-3 h1{
+ 	margin: 0 auto;
+ 	margin-top: 50px;
+ 	font-size: 40px;
+ 	font-family: Arial;
+ 	font-weight: bold;
+ 	color: #fff;
+ }
+
+.containerModal-3 h2{
+	margin-top: 40px;
+	font-size: 28px;
+	font-family: Arial;
+	color: #fff;
+}
+
+.containerModal-4{
+	background-color: rgb(102,255,102);
+	width: 30%;
+	height: 400px;
+	margin:0 auto;
+	text-align: center;
+	box-shadow: 10px 10px 9px 10px rgba(0,0,0,0.3);
+	border-radius: 20px;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.containerModal-4 h1{
+ 	margin: 0 auto;
+ 	margin-top: 50px;
+ 	font-size: 30px;
+ 	font-family: Arial;
+ 	font-weight: bold;
+ 	color: #fff;
+ }
+.containerModal-4 h2{
+	margin-top: 20px;
+	font-size: 18px;
+	font-family: Arial;
+	color: #fff;
+}
+
+.containerModal-4 button{
+	margin-top: 30px;
+	background-color: #1E90FF;
+	color: #fff;
+	border-radius: 10px;
+	width: 150px;
+	height: 30px;
+	font-size: 15px;
+	font-family: Arial;
+
+}
+
+.btn_send:hover{
+ 	cursor: pointer;
+ 	color: #000;
+  	background-color: #f1f1f1;
+ }
+
+.userFirst,
+.userLast,
+.userEmail ,
+.userPassword {
+	margin-top: 20px;
+}
+.containerModal-5{
+	background-color: rgb(102,255,102);
+	width: 30%;
+	height: 400px;
+	margin:0 auto;
+	text-align: none;
+	box-shadow: 10px 10px 9px 10px rgba(0,0,0,0.1);
+	border-radius: 20px;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.userInformation{
+	margin: 0 auto;
+	background-color: #fff;
+	color: 	#000;
+	width: 75%;
+	height: 70%;
+	font-size: 15px;
+	font-family: Arial;
+	padding: 10px;
+	font-weight: bold;
+
+}
+
+.containerModal-5 button{
+	margin-top: 50%;
+	background-color: #1E90FF;
+	color: #fff;
+	border-radius: 10px;
+	width: 100%;
+	height: 30px;
+	font-size: 15px;
+	font-family: Arial;
+}
+
+.containerModal-6,
+.containerModal-8 {
+	background-image: url("https://c4.wallpaperflare.com/wallpaper/772/718/465/clouds-the-simpsons-figure-background-wallpaper-preview.jpg");
+	width: 30%;
+	height: 400px;
+	margin:0 auto;
+	text-align: center;
+	box-shadow: 10px 10px 9px 10px rgba(0,0,0,0.8);
+	border-radius: 20px;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.containerModal-7,
+.containerModal-9 {
+	background-image: url("https://lifestyle.americaeconomia.com/sites/lifestyle.americaeconomia.com/files/styles/gallery_image/public/background-15226_640.jpg?itok=XlN0eRo2");
+	width: 30%;
+	height: 400px;
+	margin:0 auto;
+	text-align: center;
+	box-shadow: 10px 10px 9px 10px rgba(0,0,0,0.8);
+	border-radius: 20px;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.containerModal-6,
+.containerModal-7,
+.containerModal-8,
+.containerModal-9 h1{
+ 	margin: 0 auto;
+ 	margin-top: 50px;
+ 	font-size: 30px;
+ 	font-family: Arial;
+ 	font-weight: bold;
+ 	color: #fff;
+ }
+
+.containerModal-6,
+.containerModal-7,
+.containerModal-8,
+.containerModal-9 h2{
+	margin-top: 40px;
+	font-size: 24px;
+	font-family: Arial;
+	color: #fff;
+}
+
+@media screen and(max-width: 600px;){
+	.article{
+		width: 100%;
+	}
+}
